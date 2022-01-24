@@ -1,0 +1,48 @@
+:root {
+    --liens-article: #007bff;
+    --lien-article-hover: #0056b3;
+    --fond-header: #f9f9f9;
+    --borudre-article: #eaeaea;
+    --tag-work: #0766F0;
+    --tag-team: #DC5E53;
+    --tag-news: #98DC62;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+.gauche {
+    background-image: url("../images/nicole.jpg");
+    background-size:cover;;
+    min-width: 50vw;
+}
+.droite {
+    min-width: 50vw;
+    overflow: auto;
+}
+.droite__main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.droite__article {
+    width: 50%;
+}
+.gauche__logo{
+    padding: 20px 10px 0 20px;
+    width: 5%;
+    float: left;
+}
+.gauche__titre {
+    color: white;
+    font-size: 2rem;
+    width: 20px;
+    display: inline-block;
+    padding: 20px 0 0 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
