@@ -11,6 +11,7 @@
 body {
     min-width: 100vw;
     min-height: 100vh;
+    
 }
 .wrapper {
     display: flex;
@@ -18,8 +19,12 @@ body {
 }
 .gauche {
     background-image: url("../images/nicole.jpg");
-    background-size:cover;;
+    background-size: cover;
+    background-position: center;
     min-width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;   
 }
 .droite {
     min-width: 50vw;
@@ -30,19 +35,131 @@ body {
     flex-wrap: wrap;
 }
 .droite__article {
-    width: 50%;
+    width: 49%;
+    border: 1px solid var(--borudre-article);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
 }
 .gauche__logo{
     padding: 20px 10px 0 20px;
     width: 5%;
     float: left;
 }
-.gauche__titre {
+.gauche__titre1 {
     color: white;
     font-size: 2rem;
     width: 20px;
     display: inline-block;
-    padding: 20px 0 0 5px;
+    padding: 15px 0 0 5px;
     text-transform: uppercase;
+    font-weight: bold;
+}
+
+.gauche__contenue {
+    background-color: rgba(255,255,255,0.2);
+    color: white;
+    margin: 200px auto;
+    text-shadow: 2px 2px 2px black;
+    width: 90%;
+    text-align: right;
+    padding: 20px;
+}
+.gauche__texte {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+.gauche__titre2 {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0 0 15px 0;
+}
+.gauche__subtittle{
+    font-size: .5em;
+    font-weight: normal;
+    font-style: italic;
+}
+.droite__titre {
+    font-weight: bold;
+    background-color: var(--fond-header);
+    padding: 20px 20px;
+    font-size: 2em;
+}
+
+.droite__tag {
+    color: white;
+    text-transform: uppercase;
+    width: 55px;
+    font-weight: bold;
+    border-radius: 2px;
+    margin: 25px 20px;
+    padding: 2px;
+    text-align: center;
+    
+}
+
+.--team {
+    background-color: var(--tag-team);
+}
+
+.--work {
+    background-color: var(--tag-work);
+}
+
+.--news {
+    background-color: var(--tag-news);
+}
+
+.droite__titrearticle {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 1.5em;
+}
+.droite__article main {
+    padding: 20px;
+    flex-grow: 1;
+}
+.droite__article footer {
+    padding: 20px;
+}
+.auteur__photo {
+    float: left;
+    width: 25px;
+    padding: 0 8px 0 0;
+}
+
+.auteur__nom {
+    font-weight: bold;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.droite__contenue {
+    margin: 15px;
+}
+.article__lien {
+    font-weight: bold;
+    color: var(--liens-article);
+}
+.article__lien:hover {
+    color: var(--lien-article-hover);
+}
+
+.gauche_footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    font-size: 1.2em;
+    
+}
+
+.gauche__lien {
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
     font-weight: bold;
 }
